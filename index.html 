@@ -559,4 +559,215 @@ nav {
 
   <script src="script.js"></script>
 </body>
-</html>
+</html>* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #20312e;
+  background: #fffaf3;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  background: #fffaf3;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  background: #f28a62;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.nav-cta,
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: #78c8b3;
+  font-weight: bold;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+  padding: 55px 6%;
+}
+
+.eyebrow {
+  color: #267466;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 15px 0;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 1;
+}
+
+.hero h1 span {
+  color: #267466;
+}
+
+.hero-intro {
+  color: #526461;
+  font-size: 1.2rem;
+}
+
+.button {
+  margin-top: 12px;
+  color: white;
+  background: #f28a62;
+}
+
+.hero-photo {
+  position: relative;
+}
+
+.hero-photo img {
+  height: 450px;
+  border-radius: 28px;
+}
+
+.photo-sticker {
+  position: absolute;
+  right: 12px;
+  bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: white;
+  font-weight: bold;
+}
+
+.section-wrap {
+  padding: 35px 6%;
+}
+
+.section-title h2 {
+  font-size: 2.4rem;
+}
+
+.habit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.habit-card {
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 8px 22px #20312e18;
+}
+
+.habit-card img {
+  height: 220px;
+}
+
+.card-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+.card-label h3 {
+  font-size: 1.2rem;
+}
+
+.card-peach { background: #fff0e8; }
+.card-blue { background: #eaf8fc; }
+.card-yellow { background: #fff6d5; }
+
+.quote-band {
+  margin: 40px 6%;
+  padding: 28px;
+  border-radius: 22px;
+  background: #e4f2dc;
+  text-align: center;
+}
+
+.quote-band p {
+  font-size: 1.4rem;
+}
+
+.text-link {
+  color: #267466;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 25px 6%;
+  text-align: center;
+  color: #526461;
+}
+
+.footer-brand {
+  justify-content: center;
+  color: #20312e;
+}
+
+@media (max-width: 700px) {
+  .topbar,
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+  }
+
+  .hero-photo img {
+    height: 320px;
+  }
+
+  .habit-grid {
+    grid-template-columns: 1fr;
+  }
+}
