@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WellNest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">WellNest</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Habits</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <p class="tag">LIVE BRIGHTER</p>
+        <h1>Healthy living feels easy.</h1>
+        <p>Small habits. More energy. Better days.</p>
+        <button>Explore</button>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+        alt="Healthy lifestyle"
+      />
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=800&q=80" />
+        <h3>Eat well</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" />
+        <h3>Move daily</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80" />
+        <h3>Feel better</h3>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
